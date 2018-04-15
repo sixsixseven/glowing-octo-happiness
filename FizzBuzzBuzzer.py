@@ -1,5 +1,3 @@
-  # github.com/sixsixseven
-
 print("\n\n\tFIZZ BUZZ BUZZER\n\n\a\a\a")
 
 
@@ -21,9 +19,11 @@ print("\n\n\n")
 
 
 for x in range(start_range,ending_range):
-	if x % fizz_div == 0:
+	if x % fizz_div == 0 and x % buzz_div == 0:
+		print("FizzBuzz")
+	elif x % fizz_div == 0:
 		print("Fizz")
-	if x % buzz_div == 0:
+	elif x % buzz_div == 0:
 		print("Buzz")
 	else:
 		print(x)
